@@ -24,3 +24,19 @@ grades
 
 main() 
 """
+
+def main():
+    g = open("Final.txt", "r")
+    grades = g.read()
+    grades_list = grades.split()
+    g.close
+    
+
+    len(grades_list)
+    print("Total amount of grades is", len(grades_list))
+
+    return sum(grades_list) / len(grades_list)
+    average = Average(grades_list)
+    print(" ", round(average, 2))
+
+main()
